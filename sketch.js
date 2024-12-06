@@ -27,6 +27,10 @@ function draw(){
   drawUIText();
 }
 
+function windowResized(){
+  resizeCanvas(windowWidth, windowHeight);
+}
+
 function drawUIText(){
   text("Seeds", 10, 25);
   text("Dimension", 10, 45);
