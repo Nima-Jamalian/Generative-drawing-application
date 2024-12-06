@@ -1,0 +1,21 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+
+.text{
+  color: red;
+}
+
+.button{
+  font-size: 100px;
+  border-width: 10px;
+  background-color: red; 
+}
+
+.button:hover{
+  background-color: darkred;
+}
