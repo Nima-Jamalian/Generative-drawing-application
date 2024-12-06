@@ -39,42 +39,42 @@ function drawUIText(){
 }
 
 function drawUIInputSliders(){
-  //Create a slider and place it at the top of the canvas.
+  //seedsSlider (min, max, default)
   seedsSlider = createSlider(0, 1000, 500);
   seedsSlider.position(50, 12);
   seedsSlider.size(120);
 
-  //Create a slider and place it at the top of the canvas.
+  //dimensionSlider (min, max, default)
   dimensionSlider = createSlider(0, 100, 50);
   dimensionSlider.position(70, 32);
   dimensionSlider.size(100);
 
-  //Create a slider and place it at the top of the canvas.
+  //distanceSlider (min, max, default)
   distanceSlider = createSlider(0, 30, 1);
   distanceSlider.position(70, 52);
   distanceSlider.size(100);
 
-  //Create a slider and place it at the top of the canvas.
+  //rotationSlider (min, max, default)
   rotationSlider = createSlider(0, 180, 175);
   rotationSlider.position(70, 72);
   rotationSlider.size(100);
 
-  //Create a slider and place it at the top of the canvas.
+  //color_R_slider (min, max, default)
   color_R_slider = createSlider(0, 255, 50);
   color_R_slider.position(70, 92);
   color_R_slider.size(100);
 
-  //Create a slider and place it at the top of the canvas.
+  //color_G_slider (min, max, default)
   color_G_slider = createSlider(0, 255, 50);
   color_G_slider.position(70, 112);
   color_G_slider.size(100);
 
-  //Create a slider and place it at the top of the canvas.
+  //color_B_slider (min, max, default)
   color_B_slider = createSlider(0, 255, 200);
   color_B_slider.position(70, 132);
   color_B_slider.size(100);
 
-  //Create a slider and place it at the top of the canvas.
+  //color_A_slider (min, max, default)
   color_A_slider = createSlider(0, 255, 100);
   color_A_slider.position(70, 152);
   color_A_slider.size(100);  
