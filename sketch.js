@@ -17,10 +17,12 @@ function draw(){
   background(200);
   push();
   translate(width/2, height/2);
+  //movement rotation
   rotate(frameCount * speedSlider.value()/10);
   for(let i=0; i<seedsSlider.value(); i++){
     push();
     fill(color_R_slider.value(),color_G_slider.value(),color_B_slider.value(),color_A_slider.value());
+    //shape rotation
     rotate(i * rotationSlider.value());
     circle(i, i*distanceSlider.value(), dimensionSlider.value());
     pop();
