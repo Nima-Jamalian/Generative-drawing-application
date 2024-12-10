@@ -5,6 +5,7 @@ let color_R_slider;
 let color_G_slider;
 let color_B_slider;
 let color_A_slider;
+let speedSlider;
 
 function setup(){
   createCanvas(windowWidth, windowHeight);
@@ -16,6 +17,7 @@ function draw(){
   background(200);
   push();
   translate(width/2, height/2);
+  rotate(frameCount * speedSlider.value()/10);
   for(let i=0; i<seedsSlider.value(); i++){
     push();
     fill(color_R_slider.value(),color_G_slider.value(),color_B_slider.value(),color_A_slider.value());
@@ -40,6 +42,7 @@ function drawUIText(){
   text("Color G", 10, 125);
   text("Color B", 10, 145);
   text("Color A", 10, 165);
+  text("Speed", 10, 185);
 }
 
 function drawUIInputSliders(){
@@ -82,6 +85,12 @@ function drawUIInputSliders(){
   color_A_slider = createSlider(0, 255, 100);
   color_A_slider.position(70, 152);
   color_A_slider.size(100);  
+
+  //speedSlider (min, max,default)
+  speedSlider = createSlider(0,100,1);
+  speedSlider.position(70,172);
+  speedSlider.size(100);
+
 }
 
 

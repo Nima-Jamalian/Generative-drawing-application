@@ -1,6 +1,7 @@
 html, body {
   margin: 0;
   padding: 0;
+  background-color: black;
 }
 canvas {
   display: block;
@@ -8,14 +9,4 @@ canvas {
 
 .text{
   color: red;
-}
-
-.button{
-  font-size: 100px;
-  border-width: 10px;
-  background-color: red; 
-}
-
-.button:hover{
-  background-color: darkred;
 }
